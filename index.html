@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <form id='formulario' class="formulario" method="POST" action="registro.php">
+            <h1>Create Account</h1>
+            <p>Nombre</p>
+            <input type="text" name="nombre" id="nombre"/>
+            <small id="errorNombre">Rellene el campo</small>
+            <p>Primer apellido</p>
+            <input type="text" name="primer_apellido" id="primer_apellido"/>
+            <small id="errorPrimerApellido">Rellene el campo</small>
+            <p>Segundo apellido</p>
+            <input type="text" name="segundo_apellido" id="segundo_apellido"/>
+            <small id="errorSegundoApellido">Rellene el campo</small>
+            <p>Email</p>
+            <input type="text" name="email" id="email" />
+            <small id="errorEmail">Rellene el campo</small>
+            <p>Usuario</p>
+            <input type="text" name="usuario" id="usuario" />
+            <small id="errorUsuario">Rellene el campo</small>
+            <p>Contraseña</p>
+            <input type="password" name="clave" id="clave"  />
+            <small id="errorClave">Rellene el campo</small>
+            <center>
+                <input type="submit" value="ENVIAR" id="btnEnviar" onclick="enviar()"/>
+            </center>
+        </form>
+    </div>
+    </center>
+    <center>
+        <button id="btnTabla" style="display: none;" onclick="redireccionar()">Registro</button>
+    </center>
+    <script src="index.js"></script>
+</body>
+</html>
